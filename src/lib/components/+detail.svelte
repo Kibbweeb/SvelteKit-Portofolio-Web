@@ -1,7 +1,8 @@
-<script>
-  let activeTab = 'education';
+<script lang="ts">
+  type tabOption = 'education' | 'achievements';
+  let activeTab: tabOption = 'education';
 
-  function setTab(tabName) {
+  function setTab(tabName: tabOption) {
     activeTab = tabName;
   }
 </script>
