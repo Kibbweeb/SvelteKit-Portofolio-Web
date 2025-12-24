@@ -7,7 +7,7 @@
   }
 </script>
 
-<div class="w-1/2 mx-auto {activeTab === 'education' ? 'bg-gradient-to-r from-blue-600 via-purple-600 to-red-600' : 'bg-gradient-to-r from-lime-600 via-yellow-600 to-orange-600'} rounded-md p-0.5 shadow-lg shadow-indigo-900/20">
+<div class="w-5/6 lg:w-1/2 md:w-3/4 mx-auto {activeTab === 'education' ? 'bg-gradient-to-r from-blue-600 via-purple-600 to-red-600' : 'bg-gradient-to-r from-lime-600 via-yellow-600 to-orange-600'} rounded-md p-0.5 shadow-lg shadow-indigo-900/20">
   <div class="bg-black rounded-md">
     <div class="relative right-0">
     <ul class="relative flex flex-wrap px-1.5 py-1.5 list-none rounded-md bg-auto" role="tablist">
