@@ -42,7 +42,7 @@
           </span>
         {/if}
       </p>
-      <button on:click={toggleMore} class="mt-4 text-blue-500 hover:text-blue-400 focus:outline-none transition-colors duration-200">
+      <button on:click={toggleMore} class="mt-4 text-blue-600 hover:text-blue-400 focus:outline-none transition-colors duration-200 font-grotesk">
         {showMore ? 'Hide' : 'Read More'}
       </button>
     </div>
