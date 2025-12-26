@@ -2,7 +2,7 @@
     import { siReact, siGo, siSvelte, siTailwindcss, siHtml5, siCss, siJavascript, siCplusplus, siPostgresql, siGit } from 'simple-icons/icons';
 </script>
 
-<div class="max-w-4xl mx-auto px-5 mt-25">
+<div class="max-w-4xl mx-auto px-5 mt-23">
     <div class="flex flex-col justify-center">
         <div class="text-center">
             <h2 class="font-semibold text-2xl font-mono text-white">Used Technologies</h2>

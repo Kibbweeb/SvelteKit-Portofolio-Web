@@ -8,7 +8,7 @@
 
 <div class="relative min-h-screen bg-black overflow-hidden">
 	<div class="absolute inset-0 overflow-hidden">
-		<Meteors number={60} class="opacity-30" />
+		<Meteors number={85} class="opacity-30" />
 	</div>
 	
 	<div class="relative z-20">
