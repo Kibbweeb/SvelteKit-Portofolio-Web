@@ -55,7 +55,7 @@
                 </span>
                 <br>
                 <span class="text-sm font-light text-slate-400">
-                    (2021 - Present)
+                    (2024 - Present)
                 </span>
                 <br>
                 <span class="text-base font-normal text-gray-300">
@@ -68,7 +68,7 @@
                 </span>
                 <br>
                 <span class="text-sm font-light text-slate-400">
-                    (2018 - 2021)
+                    (2021 - 2024)
                 </span>
                 <br>
                 <span class="text-base font-normal text-gray-300">
