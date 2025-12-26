@@ -7,7 +7,11 @@
 </script>
 
 <Hero/>
+
 <Detail />
+
 <Tech />
+
 <Projects />
+
 <Contacts />
