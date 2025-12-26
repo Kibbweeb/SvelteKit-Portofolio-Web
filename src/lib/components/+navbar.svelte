@@ -11,7 +11,7 @@
 </script>
 
 <nav class="block w-full px-4 py-0 mx-auto text-white lg:px-8 lg:py-3 relative z-10">
-  <div class="container flex flex-wrap items-center justify-between mx-auto text-gray-100 max-w-screen-lg">
+  <div class="container flex flex-wrap items-center justify-between mx-auto text-gray-100 max-w-5xl">
     <a href="/"
       class="mr-4 block cursor-pointer py-2 text-xl text-white font-orbitron font-bold">
       Kibbweeb

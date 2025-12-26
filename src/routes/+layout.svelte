@@ -2,6 +2,7 @@
 	import './layout.css';
 	import Meteors from '$lib/components/+meteors.svelte';
 	import Navbar from '$lib/components/+navbar.svelte';
+	import Footer from '$lib/components/+footer.svelte';
 
 	let { children } = $props();
 </script>
@@ -16,5 +17,6 @@
 		<main>
 			{@render children()}
 		</main>
+		<Footer />
 	</div>
 </div>

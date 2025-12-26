@@ -1,4 +1,7 @@
 <script lang="ts">
+  import { slide } from 'svelte/transition';
+  import { cubicOut } from 'svelte/easing';
+  
   type tabOption = 'education' | 'achievements';
   let activeTab: tabOption = 'education';
 
@@ -7,37 +10,44 @@
   }
 </script>
 
-<div class="w-5/6 lg:w-1/2 md:w-3/4 mx-auto {activeTab === 'education' ? 'bg-gradient-to-r from-blue-600 via-purple-600 to-red-600' : 'bg-gradient-to-r from-lime-600 via-yellow-600 to-orange-600'} rounded-md p-0.5 shadow-lg shadow-indigo-900/20">
+<div class="mt-13">
+<div class="w-5/6 lg:w-1/2 md:w-3/4 mx-auto rounded-md p-0.5 shadow-lg shadow-indigo-900/20 transition-all duration-700 ease-in-out {activeTab === 'education' ? 'bg-linear-to-r from-blue-600 via-purple-600 to-red-600' : 'bg-linear-to-r from-lime-600 via-yellow-600 to-orange-600'}">
   <div class="bg-black rounded-md">
     <div class="relative right-0">
-    <ul class="relative flex flex-wrap px-1.5 py-1.5 list-none rounded-md bg-auto" role="tablist">
+    <ul class="relative flex flex-wrap px-1.5 py-1.5 list-none rounded-md bg-auto divide-x divide-slate-700" role="tablist">
       <li class="z-30 flex-auto text-center">
         <button
-          class="z-30 flex items-center justify-center w-full px-0 py-2 text-sm mb-0 transition-all ease-in-out border-0 rounded-md cursor-pointer {activeTab === 'education' ? 'text-white bg-slate-700' : 'text-slate-600 bg-inherit'}"
+          class="relative z-30 flex items-center justify-center w-full px-0 py-3 text-sm mb-0 transition-all ease-in-out border-0 cursor-pointer {activeTab === 'education' ? 'text-white' : 'text-slate-500'} hover:text-white duration-300"
           on:click={() => setTab('education')}
           role="tab"
           aria-selected={activeTab === 'education'}
           aria-controls="education"
         >
           Education
+          {#if activeTab === 'education'}
+            <span class="absolute bottom-0 left-0 right-0 h-0.5 bg-linear-to-r from-blue-600 via-purple-600 to-red-600" transition:slide={{ duration: 300, easing: cubicOut }}></span>
+          {/if}
         </button>
       </li>
       <li class="z-30 flex-auto text-center">
         <button
-          class="z-30 flex items-center justify-center w-full px-0 py-2 mb-0 text-sm transition-all ease-in-out border-0 rounded-lg cursor-pointer {activeTab === 'achievements' ? 'text-white bg-slate-700' : 'text-slate-600 bg-inherit'}"
+          class="relative z-30 flex items-center justify-center w-full px-0 py-3 mb-0 text-sm transition-all ease-in-out border-0 cursor-pointer {activeTab === 'achievements' ? 'text-white' : 'text-slate-500'} hover:text-white duration-300"
           on:click={() => setTab('achievements')}
           role="tab"
           aria-selected={activeTab === 'achievements'}
           aria-controls="achievements"
         >
           Achievements
+          {#if activeTab === 'achievements'}
+            <span class="absolute bottom-0 left-0 right-0 h-0.5 bg-linear-to-r from-lime-600 via-yellow-600 to-orange-600" transition:slide={{ duration: 300, easing: cubicOut }}></span>
+          {/if}
         </button>
       </li>
     </ul>
  
     <div class="p-5">
       {#if activeTab === 'education'}
-        <div id="education" role="tabpanel">
+        <div role="tabpanel" class="transition-opacity duration-200">
           <ul class="list-disc list-inside space-y-2 ">
             <li class="-indent-8 pl-5 marker:text-2xl marker:text-red-500 text-lg text-white font-grotesk ml-6">
                 <span class="text-xl font-semibold text-red-600">
@@ -64,10 +74,11 @@
                 <span class="text-base font-normal text-gray-300">
                     My High School Where I Graduated in Science Major
                 </span>
+            </li>
           </ul>
         </div>
-      {:else if activeTab === 'achievements'}
-        <div id="achievements" role="tabpanel">
+      {:else}
+        <div role="tabpanel" class="transition-opacity duration-200">
             <ul class="list-disc list-inside space-y-2 ">
                 <li class="-indent-8 pl-5 marker:text-2xl marker:text-orange-600 text-lg text-white font-grotesk ml-6">
                     <span class="text-xl font-semibold text-orange-600">
@@ -96,10 +107,10 @@
                     </span>
                 </li>
             </ul>
-          
         </div>
       {/if}
     </div>
   </div>
   </div>
+</div>
 </div>

@@ -2,7 +2,7 @@
     import { siReact, siGo, siSvelte, siTailwindcss, siHtml5, siCss, siJavascript, siCplusplus, siPostgresql, siGit } from 'simple-icons/icons';
 </script>
 
-<div class="max-w-4xl mx-auto px-5 mt-23">
+<div class="max-w-4xl mx-auto px-5 mt-20">
     <div class="flex flex-col justify-center">
         <div class="text-center">
             <h2 class="font-semibold text-2xl font-mono text-white">Used Technologies</h2>
@@ -14,7 +14,7 @@
             </span>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-y-10 gap-x-6 mt-10 justify-items-center">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-y-10 gap-x-6 mt-8 justify-items-center">
 
             <div class="flex flex-col items-center gap-3 w-24 group" style="color: #{siReact.hex}">
                 <div class="hover:scale-110 transition-transform cursor-pointer w-16 h-16 flex items-center justify-center">

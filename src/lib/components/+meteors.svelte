@@ -44,7 +44,7 @@
     style="top: {style.top}; left: {style.left}; --meteor-duration: {style.duration}; --meteor-delay: {style.delay};"
   >
     <div
-      class="pointer-events-none absolute top-1/2 -z-10 h-px w-12.5 -translate-y-1/2 bg-gradient-to-r from-slate-500 via-blue-500 to-transparent"
+      class="pointer-events-none absolute top-1/2 -z-10 h-px w-12.5 -translate-y-1/2 bg-linear-to-r from-slate-500 via-blue-500 to-transparent"
     ></div>
   </span>
 {/each}
