@@ -1,5 +1,5 @@
 <script>
-    import { siReact, siGo, siSvelte, siTailwindcss, siHtml5, siCss, siJavascript, siCplusplus, siPostgresql, siGit } from 'simple-icons/icons';
+    import { siReact, siGo, siSvelte, siTailwindcss, siHtml5, siCss, siJavascript, siCplusplus, siPostgresql, siGit } from 'simple-icons';
 </script>
 
 <div class="max-w-4xl mx-auto px-5 mt-20">

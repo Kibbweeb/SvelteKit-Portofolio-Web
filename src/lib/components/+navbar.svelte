@@ -10,7 +10,7 @@
   }
 </script>
 
-<nav class="block w-full px-4 py-0 mx-auto text-white lg:px-8 lg:py-3 relative z-10">
+<nav class="block w-full px-4 py-0 mx-auto text-white lg:px-8 lg:py-3 sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
   <div class="container flex flex-wrap items-center justify-between mx-auto text-gray-100 max-w-5xl">
     <a href="/"
       class="mr-4 block cursor-pointer py-2 text-xl text-white font-orbitron font-bold">
@@ -21,17 +21,17 @@
     <div class="hidden lg:block">
       <ul class="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
         <li class="flex items-center p-1 text-sm gap-x-2 text-white font-mono">
-          <a href="/about" class="flex items-center hover:text-indigo-400 transition-colors duration-300 ease-in-out">
+          <a href="#about" class="flex items-center hover:text-indigo-400 transition-colors duration-300 ease-in-out">
             About
           </a>
         </li>
         <li class="flex items-center p-1 text-sm gap-x-2 text-white font-mono">
-          <a href="/projects" class="flex items-center hover:text-indigo-400 transition-colors duration-300 ease-in-out">
+          <a href="#projects" class="flex items-center hover:text-indigo-400 transition-colors duration-300 ease-in-out">
             Projects
           </a>
         </li>
         <li class="flex items-center p-1 text-sm gap-x-2 text-white font-mono">
-          <a href="/contacts" class="flex items-center hover:text-indigo-400 transition-colors duration-300 ease-in-out">
+          <a href="#contacts" class="flex items-center hover:text-indigo-400 transition-colors duration-300 ease-in-out">
             Contacts
           </a>
         </li>
@@ -66,7 +66,7 @@
       <ul class="flex flex-col gap-2 px-4 py-4">
         <li class="flex items-center p-2 text-sm gap-x-2 text-white font-mono">
           <a
-            href="/about"
+            href="#about"
             on:click={closeMenu}
             class="flex items-center hover:text-indigo-400 transition-colors duration-300 ease-in-out w-full"
           >
@@ -75,7 +75,7 @@
         </li>
         <li class="flex items-center p-2 text-sm gap-x-2 text-white font-mono">
           <a
-            href="/projects"
+            href="#projects"
             on:click={closeMenu}
             class="flex items-center hover:text-indigo-400 transition-colors duration-300 ease-in-out w-full"
           >
@@ -84,7 +84,7 @@
         </li>
         <li class="flex items-center p-2 text-sm gap-x-2 text-white font-mono">
           <a
-            href="/contacts"
+            href="#contacts"
             on:click={closeMenu}
             class="flex items-center hover:text-indigo-400 transition-colors duration-300 ease-in-out w-full"
           >

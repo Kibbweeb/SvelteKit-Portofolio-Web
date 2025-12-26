@@ -4,12 +4,12 @@
     import { siReact, siGo, siPostgresql, siTailwindcss } from 'simple-icons';
 </script>
 
-<div class="w-5/6 md:w-3/5 mx-auto px-5 mt-20">
+<div class="w-5/6 md:w-3/5 mx-auto px-5 mt-20" id="projects">
     <div class="flex flex-col justify-center">
         <div class="text-center">
             <h2 class="font-semibold text-2xl font-mono text-white">Projects</h2>
             <p class="max-w-md mx-auto mt-2 text-gray-500 font-grotesk">
-                Here are some pf my projects that i've worked on recently.
+                Here are some of my projects that i've worked on recently.
             </p>
             <span class="max-w-md mx-auto mt-2 text-gray-500 text-sm font-grotesk">
                 (Stay tuned for more projects from me.)
