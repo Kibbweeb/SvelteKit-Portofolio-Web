@@ -1,6 +1,6 @@
 <script>
-    import screenshotImg from '$lib/assets/Screenshot 2025-12-26 100744.png';
-    import Nothing from '$lib/assets/coming-soon-notification-template-modern-style_1017-53352.jpg';
+    import screenshotImg from '$lib/assets/fixmyunesa-ss.png';
+    import Nothing from '$lib/assets/coming-soon.jpg';
     import { siReact, siGo, siPostgresql, siTailwindcss } from 'simple-icons';
 </script>
 
@@ -18,9 +18,9 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             
-        <a href="https://github.com/Kibbweeb/fixmyunesa" target="_blank" rel="noopener noreferrer" class="block">
-            <div class="p-0.5 bg-linear-to-r from-blue-600 via-purple-600 to-red-600 rounded-lg hover:scale-105 transition-transform">
-                <div class="block w-full rounded-lg shadow-lg overflow-hidden bg-slate-950">
+        <a href="https://github.com/Kibbweeb/fixmyunesa" target="_blank" rel="noopener noreferrer" class="block h-full opacity-83 hover:opacity-100 transition-opacity">
+            <div class="p-0.5 bg-linear-to-r from-blue-600 via-purple-600 to-red-600 rounded-lg hover:scale-105 transition-transform h-full">
+                <div class=" w-full h-full rounded-lg shadow-lg overflow-hidden bg-slate-950 flex flex-col">
                 
                 <div class="relative h-48 bg-gray-950">
                     <img class="w-full h-full object-cover" src={screenshotImg} alt="Project screenshot" />
@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 
-                <div class="p-6">
+                <div class="p-6 grow">
                     <h3 class="text-2xl font-bold font-mono text-blue-600 mb-4">FixMyUnesa</h3>
                     
                     <p class="text-gray-300 text-sm mb-6 font-grotesk">
@@ -69,9 +69,9 @@
             </div>
         </a>
 
-        <a href="#top" class="block cursor-not-allowed opacity-65">
-            <div class="p-0.5 bg-linear-to-r from-green-600 via-cyan-600 to-indigo-600 rounded-lg hover:scale-105 transition-transform">
-            <div class="block w-full rounded-lg shadow-lg overflow-hidden bg-slate-950">
+        <a href="#projects" class="block cursor-not-allowed opacity-30 h-full">
+            <div class="p-0.5 bg-linear-to-r from-green-600 via-cyan-600 to-indigo-600 rounded-lg hover:scale-105 transition-transform h-full">
+            <div class=" w-full h-full rounded-lg shadow-lg overflow-hidden bg-slate-950 flex flex-col">
                 
                 <div class="relative h-48 bg-gray-950">
                     <img class="w-full h-full object-cover" src={Nothing} alt="Coming Soon" />
@@ -80,7 +80,7 @@
                     </div>
                 </div>
                 
-                <div class="p-6">
+                <div class="p-6 grow">
                     <h3 class="text-2xl font-bold font-mono text-green-600 mb-4">Coming Soon!</h3>
                     
                     <p class="text-gray-300 text-sm mb-6 font-grotesk">
@@ -89,28 +89,32 @@
 
                     <div class="grid grid-cols-4 gap-4 mb-6">
                         <div class="flex flex-col items-center">
-                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" style="color: #{siReact.hex}">
-                                <path d={siReact.path} />
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-green-600">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
                             </svg>
-                            <span class="text-xs text-gray-400 mt-1 font-grotesk">React</span>
                         </div>
                         <div class="flex flex-col items-center">
-                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" style="color: #{siGo.hex}">
-                                <path d={siGo.path} />
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-green-600">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
                             </svg>
-                            <span class="text-xs text-gray-400 mt-1 font-grotesk">Go</span>
                         </div>
                         <div class="flex flex-col items-center">
-                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" style="color: #{siPostgresql.hex}">
-                                <path d={siPostgresql.path} />
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-green-600">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
                             </svg>
-                            <span class="text-xs text-gray-400 mt-1 font-grotesk">PostgreSQL</span>
                         </div>
                         <div class="flex flex-col items-center">
-                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" style="color: #{siTailwindcss.hex}">
-                                <path d={siTailwindcss.path} />
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-green-600">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
                             </svg>
-                            <span class="text-xs text-gray-400 mt-1 font-grotesk">TailwindCSS</span>
                         </div>
                     </div>
                     

@@ -11,8 +11,8 @@
 </script>
 
 <div class="mt-13">
-<div class="w-5/6 lg:w-1/2 md:w-3/4 mx-auto rounded-md p-0.5 shadow-lg shadow-indigo-900/20 transition-all duration-700 ease-in-out {activeTab === 'education' ? 'bg-linear-to-r from-blue-600 via-purple-600 to-red-600' : 'bg-linear-to-r from-lime-600 via-yellow-600 to-orange-600'}">
-  <div class="bg-black rounded-md">
+<div class="w-5/6 lg:w-1/2 md:w-3/4 mx-auto rounded-md p-0.5 shadow-lg shadow-indigo-900/20 transition-all duration-700 ease-in-out {activeTab === 'education' ? 'bg-linear-to-r from-blue-600 via-purple-600 to-red-600 opacity-85' : 'bg-linear-to-r from-lime-600 via-yellow-600 to-orange-600 opacity-85'}">
+  <div class="bg-black opacity-95 rounded-md">
     <div class="relative right-0">
     <ul class="relative flex flex-wrap px-1.5 py-1.5 list-none rounded-md bg-auto divide-x divide-slate-700" role="tablist">
       <li class="z-30 flex-auto text-center">
@@ -72,7 +72,7 @@
                 </span>
                 <br>
                 <span class="text-base font-normal text-gray-300">
-                    My High School Where I Graduated in Science Major
+                    Graduated with a Science Major
                 </span>
             </li>
           </ul>

@@ -1,5 +1,5 @@
 <script>
-    import { siReact, siGo, siSvelte, siTailwindcss, siHtml5, siCss, siJavascript, siCplusplus, siPostgresql, siGit } from 'simple-icons';
+    import { siReact, siGo, siSvelte, siTailwindcss, siHtml5, siCss, siJavascript, siCplusplus, siPostgresql, siGit, siNodedotjs, siDocker, siTypescript, siRedis } from 'simple-icons';
 </script>
 
 <div class="max-w-4xl mx-auto px-5 mt-20">
@@ -125,6 +125,68 @@
                     <div class="h-full rounded-full bg-current" style="width: 80%"></div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="max-w-4xl mx-auto px-5 mt-20">
+    <div class="flex flex-col justify-center">
+        <div class="text-center">
+            <h2 class="font-semibold text-2xl font-mono text-white">What I'm Currently Learning</h2>
+            <p class="max-w-md mx-auto mt-2 text-gray-500 font-grotesk">
+                Here are some of the technologies and tools that I am currently focusing on to enhance my skills.
+            </p>
+            <span class="max-w-md mx-auto mt-2 text-gray-500 text-sm font-grotesk">
+                (The bars below each icon indicate my learning progress with each technology.)
+            </span>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6 mt-8 justify-items-center">
+
+            <div class="flex flex-col items-center gap-3 w-24 group" style="color: #{siNodedotjs.hex}">
+                <div class="hover:scale-110 transition-transform cursor-pointer w-16 h-16 flex items-center justify-center">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-16 h-16">
+                        <path d={siNodedotjs.path} />
+                    </svg>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5 overflow-hidden">
+                    <div class="h-full rounded-full bg-current" style="width: 15%"></div>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center gap-3 w-24 group" style="color: #{siTypescript.hex}">
+                <div class="hover:scale-110 transition-transform cursor-pointer w-16 h-16 flex items-center justify-center">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-16 h-16">
+                        <path d={siTypescript.path} />
+                    </svg>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5 overflow-hidden">
+                    <div class="h-full rounded-full bg-current" style="width: 35%"></div>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center gap-3 w-24 group" style="color: #{siDocker.hex}">
+                <div class="hover:scale-110 transition-transform cursor-pointer w-16 h-16 flex items-center justify-center">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-16 h-16">
+                        <path d={siDocker.path} />
+                    </svg>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5 overflow-hidden">
+                    <div class="h-full rounded-full bg-current" style="width: 60%"></div>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center gap-3 w-24 group" style="color: #{siRedis.hex}">
+                <div class="hover:scale-110 transition-transform cursor-pointer w-16 h-16 flex items-center justify-center">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-16 h-16">
+                        <path d={siRedis.path} />
+                    </svg>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5 overflow-hidden">
+                    <div class="h-full rounded-full bg-current" style="width: 5%"></div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
