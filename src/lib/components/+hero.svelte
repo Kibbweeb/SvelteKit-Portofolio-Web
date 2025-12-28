@@ -1,5 +1,5 @@
 <script>
-    import {Github, Linkedin} from 'lucide-svelte';
+    import {Github, Linkedin, Mail} from 'lucide-svelte';
     
     let showMore = false;
     
@@ -15,7 +15,7 @@
           <Github size={40} />
         </a>
         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-white hover:text-indigo-400 transition-all duration-300 ease-in-out transform hover:scale-110">
-          <Linkedin size={40} />
+          <Mail size={40} />
         </a>
       </div>
       <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance text-white font-orbitron mb-6">
