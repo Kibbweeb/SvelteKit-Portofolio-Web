@@ -14,7 +14,7 @@
         <a href="https://github.com/Kibbweeb" target="_blank" rel="noopener noreferrer" class="text-white hover:text-indigo-400 transition-all duration-300 ease-in-out transform hover:scale-110">
           <Github size={40} />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-white hover:text-indigo-400 transition-all duration-300 ease-in-out transform hover:scale-110">
+        <a href="mailto:syakiebinsyirahi326@gmail.com" target="_blank" rel="noopener noreferrer" class="text-white hover:text-indigo-400 transition-all duration-300 ease-in-out transform hover:scale-110">
           <Mail size={40} />
         </a>
       </div>
