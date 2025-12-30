@@ -2,6 +2,8 @@
     import screenshotImg from '$lib/assets/fixmyunesa-ss.png';
     import Nothing from '$lib/assets/coming-soon.jpg';
     import { siReact, siGo, siPostgresql, siTailwindcss } from 'simple-icons';
+
+    
 </script>
 
 <div class="w-5/6 md:w-3/5 mx-auto px-5 mt-20" id="projects">
@@ -69,7 +71,7 @@
             </div>
         </a>
 
-        <a href="#projects" class="block cursor-not-allowed opacity-30 h-full">
+        <a href="#projects" onclick={(e) => { e.preventDefault(); document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }); }}  class="block cursor-not-allowed opacity-30 h-full">
             <div class="p-0.5 bg-linear-to-r from-green-600 via-cyan-600 to-indigo-600 rounded-lg hover:scale-105 transition-transform h-full">
             <div class=" w-full h-full rounded-lg shadow-lg overflow-hidden bg-slate-950 flex flex-col">
                 

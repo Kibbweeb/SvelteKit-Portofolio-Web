@@ -1,4 +1,6 @@
-<script>
+<script lang="ts">
+
+
   let mobileMenuOpen = false;
 
   function toggleMobileMenu() {
@@ -13,7 +15,7 @@
 <nav class="block w-full px-4 py-0 mx-auto text-white lg:px-8 lg:py-3 sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
   <div class="container flex flex-wrap items-center justify-between mx-auto text-gray-100 max-w-5xl">
     <a href="/"
-      class="mr-4 block cursor-pointer py-2 text-xl text-white font-orbitron font-bold">
+      class="mr-4 block cursor-pointer py-2 text-xl text-white font-orbitron font-bold">  
       Kibbweeb
     </a>
     
@@ -21,17 +23,17 @@
     <div class="hidden lg:block">
       <ul class="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
         <li class="flex items-center p-1 text-sm gap-x-2 text-white font-mono">
-          <a href="#about" class="flex items-center hover:text-indigo-400 transition-colors duration-300 ease-in-out">
+          <a href="#about" onclick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }); }} class="flex items-center hover:text-indigo-400 transition-colors duration-300 ease-in-out">
             About
           </a>
         </li>
         <li class="flex items-center p-1 text-sm gap-x-2 text-white font-mono">
-          <a href="#projects" class="flex items-center hover:text-indigo-400 transition-colors duration-300 ease-in-out">
+          <a href="#projects" onclick={(e) => { e.preventDefault(); document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }); }} class="flex items-center hover:text-indigo-400 transition-colors duration-300 ease-in-out">
             Projects
           </a>
         </li>
         <li class="flex items-center p-1 text-sm gap-x-2 text-white font-mono">
-          <a href="#contacts" class="flex items-center hover:text-indigo-400 transition-colors duration-300 ease-in-out">
+          <a href="#contacts" onclick={(e) => { e.preventDefault(); document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' }); }} class="flex items-center hover:text-indigo-400 transition-colors duration-300 ease-in-out">
             Contacts
           </a>
         </li>
@@ -40,7 +42,7 @@
 
     <!-- Mobile Menu Button -->
     <button
-      on:click={toggleMobileMenu}
+      onclick={toggleMobileMenu}
       class="lg:hidden text-white hover:text-indigo-400 transition-colors duration-300 ease-in-out p-2"
       aria-label="Toggle menu"
     >
@@ -67,7 +69,7 @@
         <li class="flex items-center p-2 text-sm gap-x-2 text-white font-mono">
           <a
             href="#about"
-            on:click={closeMenu}
+            onclick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }); closeMenu(); }}
             class="flex items-center hover:text-indigo-400 transition-colors duration-300 ease-in-out w-full"
           >
             About
@@ -76,7 +78,7 @@
         <li class="flex items-center p-2 text-sm gap-x-2 text-white font-mono">
           <a
             href="#projects"
-            on:click={closeMenu}
+            onclick={(e) => { e.preventDefault(); document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }); closeMenu(); }}
             class="flex items-center hover:text-indigo-400 transition-colors duration-300 ease-in-out w-full"
           >
             Projects
@@ -85,7 +87,7 @@
         <li class="flex items-center p-2 text-sm gap-x-2 text-white font-mono">
           <a
             href="#contacts"
-            on:click={closeMenu}
+            onclick={(e) => { e.preventDefault(); document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' }); closeMenu(); }}
             class="flex items-center hover:text-indigo-400 transition-colors duration-300 ease-in-out w-full"
           >
             Contacts

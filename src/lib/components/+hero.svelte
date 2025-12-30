@@ -6,6 +6,7 @@
     function toggleMore() {
         showMore = !showMore;
     }
+
 </script>
 
   <div class="flex items-center justify-center px-4 mt-20 w-full mx-auto relative z-10" id="about">
